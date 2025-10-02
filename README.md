@@ -2,6 +2,9 @@
 
 **Fauna-Network-Classifier** is a deep learning-powered image classification tool for reliably distinguishing between cats and dogs. Designed with scalability in mind, it will support broader animal recognition (and human detection) in future upgrades.
 
+<img width="1736" height="919" alt="image" src="https://github.com/user-attachments/assets/015933b1-b616-4fb0-b51d-4c5c77ebc68c" />
+
+
 ---
 
 ## Table of Contents
@@ -77,6 +80,9 @@ streamlit run app.py
 - **Upload**: Drag and drop or browse to select jpg/png images.
 - **View Results**: See predictions, fun facts, and session statistics.
 - **Future Upgrades**: For other animals/humans, updated models will be supported.
+
+- <img width="1350" height="898" alt="image" src="https://github.com/user-attachments/assets/98fd2ce7-2fcf-4df6-92d2-48cd6419f4d8" />
+
 
 ---
 
