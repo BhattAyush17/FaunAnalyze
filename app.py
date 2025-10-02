@@ -5,7 +5,7 @@ from PIL import Image
 import random
 
 st.set_page_config(
-    page_title="Cat vs Dog Classifier",    
+    page_title="Fauna -Network- Classifier",    
     page_icon="🐾", 
     layout="centered",                         
 )
