@@ -14,8 +14,8 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap');
     html, body, [class*="css"]  {
         font-family: 'Bitcount Single Ink', monospace !important;
-        background: #000000;
-        color: #ffffff;
+        background: #16171d;
+        color: #00ffea;
         letter-spacing: 2px;
     }
     h1, h2, h3, h4, h5, h6,
@@ -27,66 +27,66 @@ st.markdown("""
     
     /* Super curvy, glassy file uploader */
     .stFileUploader {
-        background: rgba(64,64,64,0.95) !important;
+        background: rgba(44,46,78,0.95) !important;
         border-radius: 38px !important;
-        border: 2.5px solid #ffffff !important;
-        box-shadow: 0 4px 32px 0 #666666, 0 2px 10px 0 #333333;
+        border: 2.5px solid #33ffe6 !important;
+        box-shadow: 0 4px 32px 0 #33ffe688, 0 2px 10px 0 #22223b;
         padding: 30px !important;
         margin-top: 16px;
         margin-bottom: 28px;
         transition: box-shadow 0.3s, border-color 0.3s;
     }
     .stFileUploader:hover {
-        box-shadow: 0 10px 48px 0 #999999, 0 2px 10px 0 #333333;
-        border-color: #cccccc !important;
+        box-shadow: 0 10px 48px 0 #33ffe6cc, 0 2px 10px 0 #22223b;
+        border-color: #a8002c !important;
     }
-    /* Browse files button 3D glass effect - black and white */
+    /* Browse files button 3D glass effect - blackish red */
     .stFileUploader button, .stFileUploader input[type="file"]::file-selector-button {
         font-family: 'Bitcount Single Ink', monospace !important;
-        background: linear-gradient(90deg, #333333 60%, #666666 100%) !important;
+        background: linear-gradient(90deg, #240404 60%, #a8002c 100%) !important;
         border-radius: 18px !important;
         border: none !important;
-        color: #ffffff !important;
+        color: #ffb3c6 !important;
         font-size: 1.22em;
         font-weight: 700;
-        box-shadow: 0 2px 12px #666666;
+        box-shadow: 0 2px 12px #a8002c44;
         padding: 8px 28px;
         margin-right: 10px;
         transition: background 0.4s, box-shadow 0.3s;
-        text-shadow: 0 0 2px #666666, 0 2px 8px #333333;
+        text-shadow: 0 0 2px #a8002c88, 0 2px 8px #22223b;
     }
     .stFileUploader button:hover, .stFileUploader input[type="file"]::file-selector-button:hover {
-        background: linear-gradient(90deg, #666666 45%, #333333 100%) !important;
-        color: #ffffff !important;
-        box-shadow: 0 4px 24px #999999;
+        background: linear-gradient(90deg, #a8002c 45%, #240404 100%) !important;
+        color: #fff0f5 !important;
+        box-shadow: 0 4px 24px #a8002ccc;
     }
     /* Info/collapsible sections */
     .stAlert, .stInfo, .stError, .stWarning {
         font-family: 'Bitcount Single Ink', monospace !important;
         border-radius: 18px !important;
         font-size: 1.12em;
-        background: rgba(64,64,64,0.94) !important;
-        color: #ffffff !important;
-        box-shadow: 0 2px 8px #666666;
-        border: 1px solid #ffffff !important;
+        background: rgba(44,46,78,0.94) !important;
+        color: #bb86fc !important;
+        box-shadow: 0 2px 8px #33ffe655;
+        border: 1px solid #33ffe6 !important;
         letter-spacing: 1.5px;
         margin-bottom: 18px;
     }
     /* Centered, glassy header */
     .bitcount-header {
         font-family: 'Bitcount Single Ink', monospace !important;
-        color: #ffffff;
+        color: #00fff7;
         font-size: 2.2em;
         text-align: center;
         margin-top: 28px;
         margin-bottom: 16px;
         letter-spacing: 2.3px;
-        text-shadow: 0 2px 24px #666666, 0 1px 2px #333333;
+        text-shadow: 0 2px 24px #33ffe6cc, 0 1px 2px #23253a;
     }
     /* Centered, glassy subheader */
     .bitcount-subheader {
         font-family: 'Bitcount Single Ink', monospace !important;
-        color: #ffffff;
+        color: #00fff7;
         font-size: 1.3em;
         text-align: center;
         margin-bottom: 36px;
@@ -113,7 +113,7 @@ cat_facts = [
 ]
 dog_facts = [
     "Dogs have a sense of smell that's 40x better than humans.",
-    "A dog's nose print is as unique as a human's fingerprint.",
+    "A dog’s nose print is as unique as a human’s fingerprint.",
     "Dogs can understand up to 250 words and gestures.",
     "The Basenji is the only barkless dog.",
 ]
@@ -136,7 +136,7 @@ st.markdown(
     """
     <div style='text-align:center; margin-bottom: 20px;'>
         <h1 style='font-size:2.6em;'>🐾 Cat vs Dog Classifier</h1>
-        <h3 style='font-weight:400; color:#ffffff;'>Upload a photo, get a prediction, and learn something cool!</h3>
+        <h3 style='font-weight:400; color:#00ffea;'>Upload a photo, get a prediction, and learn something cool!</h3>
     </div>
     """, unsafe_allow_html=True
 )
@@ -169,7 +169,7 @@ if uploaded_files:
             label = "DOG 🐶"
             st.session_state.dog_count += 1
             st.markdown(
-                f"<div style='color:#ffffff; font-size:1.3em; font-family:Bitcount Single Ink, monospace;'>"
+                f"<div style='color:#08f7fe; font-size:1.3em; font-family:Bitcount Single Ink, monospace;'>"
                 f"Woof! That's a pawsome dog!<br>"
                 f"<span style='font-size:1.1em;'>Dog Fact:</span> {random.choice(dog_facts)}"
                 f"</div>", unsafe_allow_html=True
@@ -178,27 +178,27 @@ if uploaded_files:
             label = "CAT 🐱"
             st.session_state.cat_count += 1
             st.markdown(
-                f"<div style='color:#cccccc; font-size:1.3em; font-family:Bitcount Single Ink, monospace;'>"
-                f"Meow! That's a purrfect cat!<br>"
+                f"<div style='color:#f72585; font-size:1.3em; font-family:Bitcount Single Ink, monospace;'>"
+                f"Meow! That’s a purrfect cat!<br>"
                 f"<span style='font-size:1.1em;'>Cat Fact:</span> {random.choice(cat_facts)}"
                 f"</div>", unsafe_allow_html=True
             )
-        st.markdown(f"<h3 style='text-align:center; margin:8px 0; color:#ffffff; font-family:Bitcount Single Ink, monospace;'>Prediction: {label}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3 style='text-align:center; margin:8px 0; color:#00ffea; font-family:Bitcount Single Ink, monospace;'>Prediction: {label}</h3>", unsafe_allow_html=True)
         st.divider()
 
     st.markdown(
-        "<div class='bitcount-info' style='text-align:center; font-family:Bitcount Single Ink, monospace; color:#ffffff; font-size:1.18em;'>"
+        "<div class='bitcount-info' style='text-align:center; font-family:Bitcount Single Ink, monospace; color:#bb86fc; font-size:1.18em;'>"
         "Upload jpg/png images of cats or dogs to get playful predictions!"
         "</div>",
         unsafe_allow_html=True
     )
 else:
     st.markdown(
-        "<center><p class='bitcount-info' style='color:#ffffff; font-size:1.18em; font-family:Bitcount Single Ink, monospace;'>Upload jpg/png images of cats or dogs to get playful predictions!</p></center>",
+        "<center><p class='bitcount-info' style='color:#bb86fc; font-size:1.18em; font-family:Bitcount Single Ink, monospace;'>Upload jpg/png images of cats or dogs to get playful predictions!</p></center>",
         unsafe_allow_html=True
     )
 st.markdown(
-    "<div class='bitcount-update' style='text-align:center; font-family:Bitcount Single Ink, monospace; color:#ffffff; font-size:1.13em;'>"
+    "<div class='bitcount-update' style='text-align:center; font-family:Bitcount Single Ink, monospace; color:#bb86fc; font-size:1.13em;'>"
     "Stay tuned for more such updates!! 🐾"
     "</div>",
     unsafe_allow_html=True
