@@ -25,7 +25,7 @@ st.markdown("""
         letter-spacing: 2px;
     }
     
-    /* Super curvy, glassy file uploader */
+    /* glassy file uploader */
     .stFileUploader {
         background: rgba(44,46,78,0.95) !important;
         border-radius: 38px !important;
@@ -72,7 +72,7 @@ st.markdown("""
         letter-spacing: 1.5px;
         margin-bottom: 18px;
     }
-    /* Centered, glassy header */
+    /* glassy header */
     .bitcount-header {
         font-family: 'Bitcount Single Ink', monospace !important;
         color: #00fff7;
@@ -83,7 +83,7 @@ st.markdown("""
         letter-spacing: 2.3px;
         text-shadow: 0 2px 24px #33ffe6cc, 0 1px 2px #23253a;
     }
-    /* Centered, glassy subheader */
+    /*  glassy subheader */
     .bitcount-subheader {
         font-family: 'Bitcount Single Ink', monospace !important;
         color: #00fff7;
